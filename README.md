@@ -1,37 +1,37 @@
-# 云豹短视频系统（短视频app源码） 安卓开源项目
 
-#### 介绍
-云豹短视频源码开源项目，精选短视频发布、浏览、点赞、评论等基础功能，如需更多功能，欢迎咨询商用版云豹短视频源码：含互动直播、短视频带货、小店、会员、付费热门等多种运营功能，更适合商用！
+![输入图片说明](/img/head.jpg)
+### 项目资料、说明
+开源源码：原生开发，可下载使用【本仓库为安卓端】【[点击前往WEB端](https://gitee.com/yunbaokeji/yunbaodsp)】
 
-#### 软件架构
-软件架构说明
+搭建文档：辅助操作，程序可跑通【[点击查看后台搭建文档](https://shimo.im/docs/1DunPF0WniECG8Tq/)】【[点击查看安卓搭建文档](https://shimo.im/docs/FOQfP1NzFyM8qmao/)】
 
+疑难辅助说明：常见问题解释，答疑解惑【见搭建文档最下方说明和本项目的下方评论】
 
-#### 安装教程
+查看演示：
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+后台地址：http://gitdsp.yunbaozb.com/admin   
 
-#### 使用说明
+后台用户名：admin    密码：visitor
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+安卓扫描下载：
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![输入图片说明](/img/qr.png)
 
 
-#### 特技
+### 项目介绍
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+本开源项目由云豹科技官方自主研发，提供开源短视频源码、搭建文档、疑难辅助说明，供大家参考、交流、使用
+开源版程序主要围绕“短视频录制、发布、浏览、点评赞功能”展开，如您需要更多专业功能、优质服务，可联系我们了解商用版本、运营版本。
+### 联系我们
+
+公司官网：http://www.yunbaokj.com/
+
+客服电话：17662585037
+
+![输入图片说明](/img/contact.png)
+
+### 云豹科技介绍
+
+![输入图片说明](/img/about.jpg)
+
+云豹短视频源码丨直播短视频源码丨短视频带货源码丨短视频app源码丨短视频系统源码丨短视频软件源码丨短视频程序源码
