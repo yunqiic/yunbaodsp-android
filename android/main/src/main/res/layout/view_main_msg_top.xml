@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/black1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/btn_fans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/icon_main_msg_fans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fans"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/red_point_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_zan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/icon_main_msg_zan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="@string/im_msg_zan"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/red_point_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_at"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/icon_main_msg_at" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="@string/im_msg_at"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/red_point_at"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/icon_main_msg_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="8dp"
+                android:text="@string/im_msg_comment"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/red_point_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/btn_offcial_msg"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_offcial"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/avatar_offcial"
+                android:layout_alignBottom="@id/avatar_offcial"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/icon_main_msg_sys"
+                android:translationY="2dp" />
+
+            <TextView
+                android:id="@+id/name_offcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/avatar_offcial"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/msg_offcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_offcial"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="80dp"
+                android:layout_toRightOf="@id/avatar_offcial"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray3"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/time_offcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/name_offcial"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/gray3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/red_point_offcial"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_below="@id/time_offcial"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <View
+                style="@style/line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_system_msg"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_system"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_main_msg_avatar_system"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/avatar_system"
+                android:layout_alignBottom="@id/avatar_system"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/icon_main_msg_sys"
+                android:translationY="2dp" />
+
+
+            <TextView
+                android:id="@+id/name_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/avatar_system"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/im_system_notice"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/msg_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_system"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="80dp"
+                android:layout_toRightOf="@id/avatar_system"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray3"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/time_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/name_system"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/gray3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/red_point_system"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_below="@id/time_system"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

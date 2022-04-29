@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UploadImageView">
+        <attr name="uiv_src" format="reference"/>
+        <attr name="uiv_add_icon" format="reference"/>
+        <attr name="uiv_del_icon" format="reference"/>
+        <attr name="uiv_bg_color" format="color"/>
+        <attr name="uiv_add_size" format="dimension"/>
+        <attr name="uiv_del_size" format="dimension"/>
+        <attr name="uiv_text_color" format="reference"/>
+        <attr name="uiv_text_top" format="dimension"/>
+    </declare-styleable>
+</resources>

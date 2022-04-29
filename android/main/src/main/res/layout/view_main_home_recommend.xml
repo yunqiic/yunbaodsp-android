@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/no_data"
+        layout="@layout/view_no_data_default"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/video_upload_group"
+        android:layout_width="60dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="62dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/video_upload_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="3dp" />
+
+        <com.yunbao.common.custom.CircleProgress
+            android:id="@+id/video_upload_progress"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            app:cp_bg_color="@color/transparent"
+            app:cp_cur_progress="0"
+            app:cp_fg_color="@color/white"
+            app:cp_max_progress="100"
+            app:cp_stroke_width="2dp" />
+
+        <TextView
+            android:id="@+id/video_upload_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+
+</FrameLayout>

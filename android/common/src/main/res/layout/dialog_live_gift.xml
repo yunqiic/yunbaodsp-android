@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/group_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray6" />
+
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <!--<com.yunbao.common.custom.GiftPageViewPager-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="2dp"-->
+                <!--android:layout_marginBottom="8dp" />-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/radio_group"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="6dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:orientation="horizontal" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="46dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/btn_send_group"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/btn_send"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:background="@drawable/bg_live_gift_send_2"-->
+                        <!--android:enabled="false"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/live_gift_send"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="14sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/btn_choose"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_toLeftOf="@id/btn_send"-->
+                        <!--android:background="@drawable/bg_live_gift_choose"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingRight="13dp"-->
+                        <!--android:text="1"-->
+                        <!--android:textColor="@color/global"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:visibility="invisible" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/arrow"-->
+                        <!--android:layout_width="13dp"-->
+                        <!--android:layout_height="7dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:layout_toLeftOf="@id/btn_send"-->
+                        <!--android:rotation="180"-->
+                        <!--android:src="@mipmap/icon_live_gift_2"-->
+                        <!--android:tint="@color/global"-->
+                        <!--android:visibility="invisible" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<com.yunbao.common.custom.DrawableTextView-->
+                    <!--android:id="@+id/coin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:drawablePadding="4dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textColor="@color/textColorBlack"-->
+                    <!--android:textSize="15sp"-->
+                    <!--app:dt_left_drawable="@mipmap/icon_live_gift_zs"-->
+                    <!--app:dt_left_height="20dp"-->
+                    <!--app:dt_left_width="20dp"-->
+                    <!--app:dt_right_drawable="@mipmap/icon_arrow_right_3"-->
+                    <!--app:dt_right_height="14dp"-->
+                    <!--app:dt_right_width="14dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/btn_charge"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_toRightOf="@id/coin"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/charge"-->
+                    <!--android:textColor="@color/global" />-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="8dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/anim_loading"
+            android:indeterminateOnly="true" />
+
+        <RelativeLayout
+            android:id="@+id/btn_send_lian"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@id/group"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@mipmap/icon_live_gift_lian"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/live_gift_send_lian"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/group_gift"
+        android:background="@drawable/bg_gift_dialog"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:text="@string/live_send_gift"-->
+            <!--android:textColor="@color/textColorBlack"-->
+            <!--android:textSize="14sp" />-->
+
+        <TextView
+            android:id="@+id/draw_gift_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/textColorBlack"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btn_close_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/group_btn" />
+
+    <FrameLayout
+        android:id="@+id/group_draw_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/group_gift"
+        android:background="#4d000000"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/tip_draw_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/icon_gift_draw_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/a_055"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <com.yunbao.common.custom.DrawGiftView
+            android:id="@+id/draw_gift"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom">
+
+            <ImageView
+                android:id="@+id/btn_draw_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@mipmap/icon_gift_back"
+                android:tint="@color/textColorBlack" />
+
+            <ImageView
+                android:id="@+id/btn_draw_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="9dp"
+                android:src="@mipmap/icon_gift_delete"
+                android:tint="@color/textColorBlack" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="7dp"
+                android:src="@mipmap/icon_gift_close"
+                android:tint="@color/textColorBlack" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

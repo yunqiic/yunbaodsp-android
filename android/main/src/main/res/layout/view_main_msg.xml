@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="48dp">
+
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                android:text="@string/main_msg"
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/btn_back"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:onClick="backClick"-->
+                <!--android:padding="9dp"-->
+                <!--android:src="@mipmap/icon_back"-->
+                <!--android:tint="@color/textColor" />-->
+
+            <ImageView
+                android:id="@+id/btn_contacts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="7dp"
+                android:src="@mipmap/icon_main_msg_add" />
+
+            <TextView
+                android:id="@+id/btn_all_read"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/chat_msg_read"
+                android:textColor="#D8D5D5"
+                android:textSize="13sp"
+                android:layout_marginRight="14dp"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/textColor"
+            app:srlTextFailed="@string/refresh_header_failed"
+            app:srlTextFinish="@string/refresh_header_finish"
+            app:srlTextLoading="@string/refresh_header_loading"
+            app:srlTextPulling="@string/refresh_header_pulling"
+            app:srlTextRefreshing="@string/refresh_header_refreshing"
+            app:srlTextRelease="@string/refresh_header_release"
+            app:srlTextUpdate="@string/refresh_header_update" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.yunbao.common.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canScroll="false" />
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_main_home_bottom">
+
+        <com.yunbao.common.custom.TabButtonGroup
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.yunbao.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_checked="true"
+                app:tbn_icon_size="30dp"
+                app:tbn_selected_icon="@mipmap/icon_main_home_1"
+                app:tbn_text_color_checked="@color/white"
+                app:tbn_text_color_unchecked="@color/gray7"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_home"
+                app:tbn_unselected_icon="@mipmap/icon_main_home_0" />
+
+
+
+            <com.yunbao.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="30dp"
+                app:tbn_selected_icon="@mipmap/icon_main_me_1"
+                app:tbn_text_color_checked="@color/white"
+                app:tbn_text_color_unchecked="@color/gray7"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_me"
+                app:tbn_unselected_icon="@mipmap/icon_main_me_0" />
+
+        </com.yunbao.common.custom.TabButtonGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="70dp"
+                android:layout_weight="2" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/red_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_red_point"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:minWidth="14dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    android:translationY="-13dp"
+                    android:translationX="18dp"
+                    />
+
+            </FrameLayout>
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:onClick="mainClick"
+            android:src="@mipmap/icon_main_start" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/global</color>
+    <color name="colorPrimaryDark">@color/global</color>
+    <color name="colorAccent">@color/global</color>
+
+    <color name="global">#ea377f</color>
+    <color name="background">#110d24</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">@color/white</color>
+    <color name="textColor2">#646464</color>
+    <color name="textColorBlack">#323232</color>
+    <color name="white">#fff</color>
+    <color name="gray1">#6e6e6e</color>
+    <color name="gray2">#909090</color>
+    <color name="gray3">#969696</color>
+    <color name="gray4">#636466</color>
+    <color name="gray5">#c8c8c8</color>
+    <color name="gray6">#f5f5f5</color>
+    <color name="gray7">#dcdcdc</color>
+    <color name="gray8">#505050</color>
+    <color name="gray9">#C9C9C9</color>
+    <color name="black1">#15102C</color>
+    <color name="black2">#34304D</color>
+    <color name="black3">#2C2840</color>
+    <color name="black4">#1F1D35</color>
+    <color name="black5">#2B2A3F</color>
+    <color name="black6">#e6323232</color>
+    <color name="black7">#4d000000</color>
+    <color name="lineColor">#1affffff</color>
+
+
+    <!--旧的-->
+    <!--<color name="yellow">#fffa37</color>-->
+    <!--<color name="yellow2">#f0cd08</color>-->
+    <color name="red">#ff0000</color>
+    <!--<color name="pk_red">#f03a40</color>-->
+    <!--<color name="pk_blue">#2a92f7</color>-->
+    <color name="blue">#1271FB</color>
+
+    <!--live-->
+    <color name="yellow">#fffa37</color>
+    <color name="yellow2">#f0cd08</color>
+    <color name="yellow3">#FFF34D</color>
+    <color name="yellow4">#ffdd00</color>
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#2a92f7</color>
+    <color name="vip_yellow">#8C6936</color>
+    <color name="vip_yellow2">#9D8055</color>
+    <color name="vip_yellow3">#B18E5A</color>
+    <color name="red2">#FB483A</color>
+
+    <color name="global1">#b25ced</color>
+    <color name="global2">#fd4f76</color>
+</resources>

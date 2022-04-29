@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="0.00s"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+
+            <com.yunbao.video.custom.VideoProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/global"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black6"
+            >
+
+            <TextView
+                android:id="@+id/group_cut"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:text="@string/video_edit_cut_tip"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <FrameLayout
+                android:id="@+id/group_time"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:visibility="invisible"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_edit_choose_special"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_time_none"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked="true"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_1"
+                        app:vesb_text="@string/video_edit_special_none"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_time_df"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_2"
+                        app:vesb_text="@string/video_edit_special_df"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_time_ff"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_3"
+                        app:vesb_text="@string/video_edit_special_ff"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_time_mdz"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_4"
+                        app:vesb_text="@string/video_edit_special_mdz"
+                        />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/group_other"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:visibility="invisible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_edit_press_special"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_other_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_5"
+                        app:vesb_text="@string/video_edit_special_dd"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_other_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_6"
+                        app:vesb_text="@string/video_edit_special_hb"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_other_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_7"
+                        app:vesb_text="@string/video_edit_special_lhcq"
+                        />
+
+                    <com.yunbao.video.custom.VideoEditSpecialBtn
+                        android:id="@+id/btn_other_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:vesb_checked_src="@mipmap/icon_effect_checked"
+                        app:vesb_cover_src="@drawable/bg_gif_cover"
+                        app:vesb_gif_src="@mipmap/icon_effect_8"
+                        app:vesb_text="@string/video_edit_special_dgfp"
+                        />
+
+                </LinearLayout>
+
+                <com.yunbao.common.custom.DrawableTextView
+                    android:id="@+id/btn_other_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/cancel_2"
+                    android:textColor="@color/gray3"
+                    android:textSize="12sp"
+                    app:dt_right_drawable="@mipmap/icon_video_edit_special_cancel_2"
+                    app:dt_right_height="14dp"
+                    app:dt_right_width="14dp"
+                    android:visibility="invisible"
+                    />
+            </FrameLayout>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="#b3333333"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/btn_cut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_video_edit_special"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/video_edit_cut"
+                    android:textColor="@color/fg_btn_beauty"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#626262"
+                    />
+
+                <RadioButton
+                    android:id="@+id/btn_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_video_edit_special"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/video_edit_special_time"
+                    android:textColor="@color/fg_btn_beauty"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#626262"
+                    />
+
+                <RadioButton
+                    android:id="@+id/btn_other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_video_edit_special"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/video_edit_special_other"
+                    android:textColor="@color/fg_btn_beauty"
+                    android:textSize="14sp"
+                    />
+            </RadioGroup>
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

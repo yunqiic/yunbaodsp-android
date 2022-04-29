@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_cash_account_title"
+            android:gravity="center"
+            android:text="@string/cash_add_account"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_account_type"
+                android:textColor="@color/textColorBlack"
+                android:textSize="14sp"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/btn_choose_type"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/account_type_img"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_cash_ali"
+                    />
+
+                <TextView
+                    android:id="@+id/account_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/cash_type_ali"
+                    android:textColor="@color/textColor2"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/account_type_arrow"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@mipmap/icon_arrow_right"
+                    android:tint="@color/textColor2"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/input_group_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+<!--android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."-->
+                <EditText
+                    android:id="@+id/input_ali_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_ali_account"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/input_ali_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_ali_name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_group_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/input_wx_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_wx_account"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_group_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/input_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_bank_name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/input_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:inputType="number"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_bank_account"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/input_bank_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_cash_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cash_input_bank_user_name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorBlack"
+                    android:textColorHint="@color/gray5"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/textColorBlack"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

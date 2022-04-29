@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_gravity="right"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/btn_pri_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_btn_main_me"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="3dp"
+            android:src="@mipmap/icon_user_msg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/pri_msg"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/follow_group"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/btn_follow_cancel"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_main_me"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:src="@mipmap/icon_user_following" />
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_user_follow"
+            android:gravity="center"
+            android:text="@string/user_add_follow"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+</LinearLayout>

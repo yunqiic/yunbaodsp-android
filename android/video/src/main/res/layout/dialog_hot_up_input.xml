@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="240dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_dialog"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="@string/video_hot_11"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_dialog_input"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/textColorBlack"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/video_hot_12"
+        android:textColor="@color/textColor2"
+        android:textSize="11sp"
+        />
+
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#FB483A"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.common.custom.MyRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="33dp"
+    android:background="@drawable/bg_item_video_hot"
+    android:button="@null"
+    android:gravity="center"
+    android:textColor="@color/fg_item_video_hot"
+    android:textSize="13sp" />

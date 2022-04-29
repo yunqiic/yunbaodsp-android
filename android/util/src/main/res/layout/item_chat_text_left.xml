@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/btn_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerCrop"
+            app:riv_oval="true"
+            />
+
+    </FrameLayout>
+
+
+    <com.yunbao.common.custom.BubbleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_avatar"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/btn_avatar"
+        android:clickable="false"
+        android:minHeight="40dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="8dp"
+        android:paddingTop="7dp"
+        app:arrowHeight="5dp"
+        app:arrowPositionY="20dp"
+        app:arrowWidth="10dp"
+        app:bubbleBgColor="@color/black3"
+        app:bubbleRadius="5dp"
+        >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:textColor="@color/textColor"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            />
+    </com.yunbao.common.custom.BubbleLayout>
+
+</RelativeLayout>
