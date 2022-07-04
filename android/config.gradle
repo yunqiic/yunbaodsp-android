@@ -20,7 +20,7 @@ ext {
 
     manifestPlaceholders = [
             //服务器地址
-            serverHost       : "http://xxxxxx.xxxxxx.com",
+            serverHost       : "https://dsp.7otech.com/",
     ]
 
 }
