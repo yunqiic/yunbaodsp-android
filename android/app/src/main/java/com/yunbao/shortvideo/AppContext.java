@@ -32,9 +32,9 @@ public class AppContext extends CommonAppContext {
         //初始化Http
         CommonHttpUtil.init();
         //腾讯云视频鉴权url
-        String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/TXUgcSDK.licence";
+        String ugcLicenceUrl = "https://license.vod2.myqcloud.com/license/v2/1305024998_1/v_cube.license";
         //腾讯云视频鉴权key
-        String ugcKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        String ugcKey = "cc3bf4f26f66dcbf84aec9601819b793";
         TXUGCBase.getInstance().setLicence(context, ugcLicenceUrl, ugcKey);
         L.setDeBug(BuildConfig.DEBUG);
         TXCLog.setConsoleEnabled(true);
